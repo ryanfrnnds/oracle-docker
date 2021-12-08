@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  oracle19c:
+    image: ryanfrnnds/oracle-meutudo:19c
+    container_name: oracle19c-image-hub
+    ports:
+      - 1521:1521
+    volumes:
+      - ${volume}:/opt/oracle/oradata
+
